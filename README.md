@@ -1,10 +1,4 @@
-# 一行命令实现看图说话|Google的im2txt模型
-
-![](https://raw.githubusercontent.com/Qinbf/tf-model-zoo/master/README_IMG/01.jpg)
-## 1.项目介绍
-
-这次给大家介绍一个google的深度学习模型im2txt，这个模型的作用跟它的名字一样，image-to-text，把图像转为文字，也就是图片描述。
-这个模型是使用 ***2015 MSCOCO Image Captioning Challenge*** 的数据集训练出来的
+# Google的im2txt模型
 
 [论文链接](http://arxiv.org/abs/1609.06647)
 
@@ -87,27 +81,3 @@ Tensorflow的安装在Anaconda安装完以后使用命令 `pip install tensorflo
 
 总的看来，这个模型可以比较好的识别比较简单的场景的，不过由于它不具备推理能力，没有生活常识，欣赏能力，所以一些复杂情况的图片它就不能很好的判断了。
 
-## 6.视频描述
-既然AI可以做图像描述，那么视频描述肯定也是可以的。
-
-video2txt.py是可以直接执行的python文件，可以传入一个视频并生成一个带有描述的新的视频
-video2txt.ipynb是对应的jupyter文件
-
-我找到星爷的经典电影大话西游来做测试，我们理想的效果应该是：
-
-![](https://raw.githubusercontent.com/Qinbf/tf-model-zoo/master/im2txt-xlab/README_IMG/%E5%9B%BE%E7%89%879.png)
-
-但实际上是：
-
-![](https://raw.githubusercontent.com/Qinbf/tf-model-zoo/master/im2txt-xlab/README_IMG/10.png)
-
-![](https://raw.githubusercontent.com/Qinbf/tf-model-zoo/master/im2txt-xlab/README_IMG/11.png)
-
-![](https://raw.githubusercontent.com/Qinbf/tf-model-zoo/master/im2txt-xlab/README_IMG/12.png)
-
-很显然AI现在还看不懂电影，大家纯属娱乐就可以。
-
-视频：
-[视频链接](https://v.qq.com/x/page/e08041dvk23.html)
-
-喜欢的朋友，记得star和follow哦。
